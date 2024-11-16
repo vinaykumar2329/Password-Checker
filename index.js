@@ -42,6 +42,19 @@ input.addEventListener('keydown', function (e) {
       result.innerText = "Password is not valid"
       result.style.color = "red"
     }
+    else if (password.search(/[a-z]/) === -1) {
+      condition.innerText = "Password must contain a Lowercase letter"
+    }
+    else if (password.search(/[A-Z]/) === -1) {
+      condition.innerText = "Password must contain a Uppercase letter"
+    }
+
+    else if (password.search(/[0-9]/) === -1) {
+      condition.innerText = "Password must contain a  Numeric letter"
+    }
+    else if (password.search(/[@\#\$\*\&]/) === -1) {
+      condition.innerText = "Password must contain a  Special Character(@,#,$,*,&)"
+    }
     else {
       result.innerText = password;
       result.style.color = "green"

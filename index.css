@@ -27,6 +27,8 @@ input{
   margin-top: 5px;
   padding: 10px;
   text-align: center;
+  height: 42px;
+  width: 219px;
 }
 #createdpassword{
 color: rgb(7, 80, 7);
